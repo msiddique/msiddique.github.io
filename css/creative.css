@@ -1,20 +1,13 @@
-/*!
- * Start Bootstrap - Creative Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
 
 html, body {
-    overflow-x: hidden;
     height: 100%;
-}
-body {
-  position: relative
-}
+  
+    }
 
 body {
-    font-family: 'Maven Pro','Helvetica Neue',Arial,sans-serif;
+    font-family: 'system-ui','Helvetica Neue',Arial,sans-serif;
+    font-size:15px;
 }
 
 h1,
@@ -23,16 +16,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Maven Pro','Helvetica Neue',Arial,sans-serif;
+    font-family: 'system-ui','Helvetica Neue',Arial,sans-serif;
 }
 
-h3{
-    font-weight: 600;
-}
-
-h3{
-    font-weight: 300;
-}
 
 p {
     margin-bottom: 20px;
@@ -44,9 +30,20 @@ section {
     padding: 0px 0;
 }
 
+a {
+    color: #777;
+    text-decoration: none;
+}
+
 .navbar-default {
     background-color: rgba(255, 255, 255, 0);
     border-color: rgba(255, 255, 255, 0);
+    position: fixed;
+}
+
+.navbar-internal {
+    background-color: rgba(255, 255, 255, .93);
+    border-color: rgba(255, 255, 255, .93);
     position: fixed;
 }
 
@@ -66,63 +63,71 @@ section {
    margin-right: 14px;
 }
 
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.lockcontainer{
+}
 
 #Logo{
     max-width: 220px;
-    height: auto;
-    margin-top:100px;
-    margin-bottom: -10px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 32px;
 }
 
-#People{
-    width: 260px;
-    height: auto;
-    margin-bottom: 25px;
-    margin-top: 42px;
-    z-index: 0;
+#TuppleUI{
+    max-height: 500px;
+    width: auto;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cardcontainer{
+    margin-top: -500px;
 }
 
 #Post1{
     width: 100%;
     max-width: 300px;
-    height: auto;
-    margin-top: 125px;
-    margin-right: -240px;
-    position: relative;
-    z-index: 10;
+    margin-left: -45px;
 }
 
 #Post2{
     width: 100%;
     max-width: 300px;
-    height: auto;
-    margin-top: 125px;
-    margin-left: -160px;
-    position: relative;
-    z-index: 10;
+    margin-left: 90px;
+    margin-top: 35px;
 }
 
 
 #Post3{
     width: 100%;
     max-width: 300px;
-    height: auto;
-    margin-top: -520px;
-    margin-right: 24px;
-    position: relative;
-    z-index: 10;
+    margin-left:-25px;
+    margin-top:-42px;
 }
 
 
 #Post4{
     width: 100%;
     max-width: 300px;
-    height: auto;
-    margin-top: -510px;
-    margin-right: 60px;
-    position: relative;
-    z-index: 10;
+    margin-left: 75px;
+    margin-top: -10px;
 }
+
 
 .copyright{
 position:relative;
@@ -131,39 +136,61 @@ margin-top: 75px;
 margin-bottom: -50px;
 }
 
+.containerlegal{
+    padding: 24px;
+    max-width: 700px;
+    margin-top: 50px;
+    margin-bottom: 76px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*!-----------Footer Start-----------*/
+
+
+.footer {
+    position: absolute;
+    font-size: 14px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.footerinternal {
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, .93);
+}
+
+#tupplellc{
+    float: left;
+    margin-left: 10px;
+}
+
+#legal{
+    float: right;
+    margin-right:14px;
+}
+
+#legal2{
+    float: right;
+    margin-right:24px;
+}
+
+
+/*!-----------Responsive Start-----------*/
+
+
+
 
 
 @media(min-width:767px) {
 
-header {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    top: 24%;
-    text-align: center;
-    color: #333;
-    background: #fff;
-    background-attachment: fixed;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    }
-
-
-header .header-content {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    top: -200px;
-    text-align: center;
-    max-width: 1000px;
-    margin: auto;
-    padding: 0px;
-    background-color: #fff;
-    z-index: 1000;
-    }
 }
 
 
@@ -179,12 +206,12 @@ header .header-content {
 
     #mainLogo{
     margin-top: 14px;
-    margin-left: 0px;
+    margin-left: 4px;
     }
 
     #appleBadge{
     margin-top: 16px;
-    margin-right: 0px;
+    margin-right: 4px;
     margin-bottom: 8px;
     }
 
@@ -197,31 +224,29 @@ header .header-content {
     max-width: 170px;
     height: auto;
     margin-bottom: 16px;
-    margin-top: 55px;
-    }
-
-
-    header {
-    position: absolute;
-    width: 100%;
-    height: 90%;
-    }
-
-    header .header-content {
-    position: relative;
-    width: 100%;
-    top: 25px;
-    text-align: center;
-    }
-
- #People{
-    width: 180px;
-    height: auto;
-    margin-bottom: 9px;
     margin-top: 8px;
-    margin-left: none;
-    margin-right:none;
     }
+
+    .containerlegal{
+    padding: 20px;
+    }
+
+    #tupplellc{
+    float: left;
+    margin-left: 4px;
+    }
+
+    #legal{
+    float: right;
+    margin-right:8px;
+    }
+
+
+    #TuppleUI{
+    max-height: 455px;
+    width: auto;
+    }
+
 
 #Post2{
     width: 100%;
