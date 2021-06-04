@@ -21,8 +21,9 @@ h6 {
 
 
 p {
-    margin-bottom: 20px;
-    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 17px;
     line-height: 1.5;
 }
 
@@ -47,6 +48,45 @@ a {
     position: fixed;
 }
 
+.input{
+    height: 44px;
+    width: 320px;
+    padding: 12px;
+    font-size: 17px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    margin-bottom: -12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submitbtn{
+    height: 42px;
+    width: 320px;
+    font-size: 17px;
+    border: 1px solid #FF5959;
+    background-color: #FF5959;
+    color: #fff;
+    border-radius: 8px;
+    margin-bottom: 48px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.submitbtn:hover{
+    opacity: 88%;
+     -webkit-transition: opacity.3s ease-out;
+  -moz-transition: opacity .3s ease-out;
+  -o-transition: opacity .3s ease-out;
+  transition: opacity .3s ease-out;
+}
+
+.Jointext{
+    text-align: center;
+}
+
 #mainLogo{
     height: 42px;
     width: auto;
@@ -63,36 +103,21 @@ a {
    margin-right: 14px;
 }
 
-.container{
-    height: 100%;
-    width: 100%;
-}
-
-.center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-.lockcontainer{
-}
-
 #Logo{
-    max-width: 220px;
+    width: 295px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 32px;
+    margin-top: 55px;
+    margin-bottom: 24px;
 }
 
 #TuppleUI{
-    max-height: 500px;
-    width: auto;
-    display: flex;
+    width: 256px;
+    display: block;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 125px;
 }
 
 .cardcontainer{
@@ -126,13 +151,10 @@ margin-bottom: -50px;
 
 
 .footer {
-    position: absolute;
-    font-size: 14px;
+   position: fixed;
+    height: 40px;
     bottom: 0;
     width: 100%;
-    height: 55px;
-    line-height: 50px;
-    background-color: rgba(255, 255, 255, 0);
 }
 
 #tuppleinc{
@@ -158,9 +180,6 @@ margin-bottom: -50px;
 /*!-----------Responsive Start-----------*/
 
 
-
-
-
 @media(min-width:767px) {
 
 .footerinternal{
@@ -174,6 +193,12 @@ padding-bottom: 24px;
 @media(max-width:767px){
 
 
+    .container {
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    }
 
     .navbar-default {
     background-color: rgba(255, 255, 255, .93);
@@ -182,8 +207,11 @@ padding-bottom: 24px;
     }
 
     #mainLogo{
-    margin-top: 14px;
-    margin-left: 4px;
+    height: 40px;
+    width: auto;
+    margin-top: 8px;
+    margin-left: 0px;
+    margin-bottom: 8px;
     }
 
     #appleBadge{
@@ -198,32 +226,39 @@ padding-bottom: 24px;
     }
 
     .center {
-    margin-top: 110px;
+    margin-top: 16px;
     width: 100%;
     }
 
    #Logo{
-    max-width: 200px;
+    max-width: 250px;
     display: flex;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 32px;
     }
 
+    .input{
+    width: 90%;
+    }
+
+    .submitbtn{
+    width:90%;
+    }
+
     #TuppleUI{
     height: 600px;
-    margin-bottom: 125px;
+    margin-bottom: 50px;
     width: auto;
     display: flex;
     margin-right: auto;
     margin-left: auto;
     }
 
-
     .footermobile {
-    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 14px;
-    bottom: 0;
     width: 100%;
     height: 65px;
     line-height: 50px;
@@ -231,17 +266,26 @@ padding-bottom: 24px;
     }
 
     .containerlegal{
-    padding: 20px;
+    padding: -16px;
     }
 
     #tupplellc{
     float: left;
-    margin-left: 4px;
+    margin-left:0px;
     }
 
     #legal{
     float: right;
-    margin-right:8px;
+    margin-right:2px;
+    }
+
+    #legal2 {
+    float: right;
+    margin-right: 10px;
+    }
+
+    .footer {
+    height: 0px;
     }
 
 
