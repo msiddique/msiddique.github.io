@@ -59,6 +59,9 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .submitbtn{
