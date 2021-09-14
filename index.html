@@ -1,154 +1,110 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" ng-app>
 
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Tupple - It's about people</title>
-	<meta name="author" content="" />
-	<meta name="description" content="fullPage full-screen navigation and sections control menu." />
-	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,navigation,control arrows, dots" />
-	<meta name="Resource-type" content="Document" />
+     <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex, nofollow">
 
-	<link rel="shortcut icon" type="image/png" href="imgs/TuppleFav.png"/>
-	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <title>Tupple - It's about people</title>
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
+
+    <!-- Jasny CSS -->
+    <link href="css/jasny-bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <link rel="shortcut icon" type="image/png" href="img/TuppleFav.png"/>
 </head>
 
 <body>
-
-	<nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-        <a href="https://tupple.io"><img src="imgs/TuppleLogo.png" id="mainLogo"></a>
+        <a href="https://tupple.io"><img src="img/TuppleLogo.png" id="mainLogo"></a>
         </div>
     </nav>
 
-<div id="fullpage">
-	<div class="section" id="section0">
-		<div class="container">
-	        <div class="row gx-5">
-	        	<div class="hidden-sm hidden-md hidden-lg col-xs-12">
-	                <img class="TuppleTitle" src="imgs/Tuppleversion1.svg" alt="Tupple">
-	            </div>
-	            <div class="col-sm-4 col-xs-12">
-		            <video class="screen" loop muted data-autoplay>
-	            	<source src="imgs/SlideVideo0.mp4" type="video/mp4 ">
-	          		</video>
-	            </div>
-	            <div class="col-sm-8 ">
-	            	<img class="TuppleLogoMain hidden-xs" src="imgs/Tuppleversion1.svg" alt="Tupple">
-	                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-	                <h1 class="h1custom">Your virtual friend and social network</h1>
-	                <p class="pcustom">The virtual friend that helps you express yourself and connect with a new community.</p>
-        			<a href="https://apps.apple.com/us/app/tupple/id1553679304" target="_blank"> <img class="appleBadge" src="imgs/Download_on_the_App_Store_Badge.svg"></a>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-
-	<div class="section" id="section1">
-		<div class="container px-5 my-5">
-	        <div class="row gx-5">
-	            <div class="col-sm-4 col-xs-12">
-	                <video class="screen" loop muted data-autoplay >
-            		<source src="imgs/SlideVideo1.mp4" type="video/mp4">
-            		</video>
-	            </div>
-	            <div class="col-sm-8">
-	                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-	                <h1 class="h1custom">Swipe up, down, left, right.</h1>
-	                <p class="pcustom">The world's first vertical + horizontal social feed allows you to create together as a collective sharing different videos, photos, and perspectives on the same post.</p>
-	                <a href="https://apps.apple.com/us/app/tupple/id1553679304" target="_blank"> <img class="appleBadge" src="imgs/Download_on_the_App_Store_Badge.svg"></a>
-	            </div>
-	        </div>
-	    </div>    
-	</div>
-	<div class="section" id="section2">
-		<div class="container px-5 my-5 wow fadeIn">
-	        <div class="row gx-5">
-	            <div class="col-sm-4">
-		            <video class="screen screenEnd" loop muted data-autoplay>
-	            	<source src="imgs/SlideVideo2.mp4" type="video/mp4">
-	            	</video>
-	            </div>
-	            <div class="col-sm-8">
-	                <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-	                <h1 class="h1custom">Express better, dive deeper.</h1>
-	                <p class="pcustom">The app that encourages you to share more than the perfect moment so we can connect better and create a space to express all parts of ourselves.</p>
-	                <a href="https://apps.apple.com/us/app/tupple/id1553679304" target="_blank"> <img class="appleBadgeEnd" src="imgs/Download_on_the_App_Store_Badge.svg"></a>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-
-	
-	<div class="section fp-auto-height" id="section3" >
-        <div class="footersection">
-        	<div class="containerfooter">
-
-			    <!-- Grid row -->
-			    <div class="row">
-					    <div class="col-md-8 mt-md-0 mt-3 footerlinkcontainer">
-					        <p class="copyright" >© 2021 Tupple, Inc.</p>
-					    </div>
-
-					    <div class="col-md-2 mb-md-0 mb-2">
-					        <h5 class="text-uppercase footerheader">Contact</h5>
-					        <ul class="list-unstyled footerlinks">
-					          <li>
-					            <a class ="footerlinks" href="https://twitter.com/tupple_app" target="_blank" >Twitter</a>
-					          </li>
-					          <li>
-					            <a class ="footerlinks" href="mailto:tuppleapp@tupple.io">Contact</a>
-					          </li>
-					        </ul>
-			      		</div>
-
-					    <div class="col-md-2 mb-md-0 mb-2">
-					        <h5 class="text-uppercase footerheader">Legal</h5>
-
-					        <ul class="list-unstyled footerlinks">
-					          <li>
-					            <a class ="footerlinks" href=terms.html>Terms</a>
-					          </li>
-					          <li>
-					            <a class ="footerlinks" href="privacy.html">Privacy Policy</a>
-					          </li>
-					        </ul>
-					    </div>
-			    </div>
-  			</div>
+   <div class="container">
+        <div class="center">
+            <div class="row">
+                <div class="lockcontainer">
+                    <div class="row">
+                        <img src="img/TuppleLockup.svg" id="Logo" alt="Logo">
+                    </div>
+                    <div class="row">
+                        <p class="Jointext" >Join the waitlist to get access to our beta.</p>
+                        <form action="https://docs.google.com/forms/u/2/d/e/1FAIpQLSdVAl0ZJ8lnG-RRQg1D9VRhp2ZE5ou3_QYXUCJoW6_v1mJ19A/formResponse" method="post">
+                            <input class="input" type="email" name="emailAddress" required placeholder="Email">
+                            <br>
+                            <button class="submitbtn" type="submit"> Submit </button>
+                        </form>
+                    </div>
+                    <div class="row">
+                        <img class="wow fadeIn mainlogo" data-wow-delay=".2s" src="img/tuppleApp.gif" id="TuppleUI" alt="card">
+                    </div>
+                    <div class="row">
+                        <footer class="footermobile">
+                          <div class="container-fluid visible-xs">
+                            <span class="text-muted" id="tupplellc" >© 2021 Tupple, Inc.</span>
+                            <span id="legal" ><a href="terms.html">Terms</a></span>
+                            <span id="legal2" ><a href="privacy.html">Privacy</a></span>
+                            <span id="legal2" ><a href="mailto: company@tupple.io">Contact</a></span>
+                          </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
     </div>
 
-</div>
+    <footer class="footer">
+      <div class="container-fluid hidden-xs">
+        <span class="text-muted" id="tuppleinc" >© 2021 Tupple, Inc.</span>
+        <span id="legal" ><a href="terms.html">Terms</a></span>
+        <span id="legal2" ><a href="privacy.html">Privacy</a></span>
+        <span id="legal2" ><a href="mailto: company@tupple.io">Contact</a></span>
+      </div>
+    </footer>
 
 
-<script type="text/javascript" src="dist/fullpage.js"></script>
-<script type="text/javascript" src="examples.js"></script>
 
-<script type="text/javascript">
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage', 'secondPage', '3rdPage', 'lastPage'],
-        sectionsColor: ['#fff', '#fff', '#fff'],
-        navigation: true,
-        navigationPosition: 'right',
-        navigationTooltips: ['A virtual friend', 'A new feed', 'Express better', 'Tupple, Inc.'],
-        responsiveWidth: false,
-        afterResponsive: function(isResponsive){
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-        }
+    <script src="js/wow.min.js"></script>
 
-    });
-</script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Angular JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/jasny-bootstrap.min.js"></script>
 
 </body>
+
 </html>
