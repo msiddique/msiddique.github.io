@@ -1,11 +1,11 @@
 const urlParams = new URLSearchParams(window.location.search);
-const resetToken = urlParams.get("token");
-const URL = "http://localhost:3000/api/v1/password/reset";
+const resetToken = urlParams.get("reset_token");
+const URL = "https://tupple.herokuapp.com/api/v1/password/reset";
 
 function resetPassword() {
   let password = document.getElementById("password").value;
   let confirm_password = document.getElementById("confirm_password").value;
-  var xhr = new XMLHttpRequest();
+  let xhr = new XMLHttpRequest();
   xhr.open("POST", URL);
 
   xhr.setRequestHeader("Accept", "application/json");
@@ -14,19 +14,23 @@ function resetPassword() {
 
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4) {
-      console.log(xhr.status);
-      console.log(xhr.responseText);
+      if (xhr.status == 200) {
+        window.location.replace("https://tupple.io/resetsuccess");
+      } else {
+        alert(
+          "The reset password link has expired, please request forget password again"
+        );
+      }
     }
   };
 
-  var data = {
-    Id: 78912,
-    Customer: "Jason Sweet",
-    Quantity: 1,
-    Price: 18.0,
+  let payload = {
+    new_password: password,
+    new_password_confirmation: confirm_password,
+    reset_token: resetToken,
   };
 
-  xhr.send(data);
+  xhr.send(JSON.stringify(payload));
 }
 
 function onConfirmationChange() {
