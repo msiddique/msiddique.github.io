@@ -9,18 +9,23 @@
 	<title>Tupple - It's about people</title>
 	<meta name="author" content="" />
 	<meta name="description" content="The virtual friend and social network" />
-	<meta name="keywords"  content="" />
+	<meta name="keywords"  content="Tupple, Social network, app, social," />
 	<meta name="Resource-type" content="Document" />
 
 	<link rel="shortcut icon" type="image/png" href="imgs/TuppleFav.png"/>
 	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
-	<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-73PBGMW1TV"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-73PBGMW1TV');
+	</script>
+
 </head>
 
 <body>
@@ -39,7 +44,7 @@
 	                <img class="TuppleTitle" src="imgs/Tuppleversion1.svg" alt="Tupple">
 	            </div>
 	            <div class="col-sm-4 col-xs-12">
-		            <video class="screen" loop muted data-autoplay>
+		            <video class="screen" playsinline loop muted data-autoplay>
 	            	<source src="imgs/SlideVideo0.mp4" type="video/mp4 ">
 	          		</video>
 	            </div>
@@ -58,7 +63,7 @@
 		<div class="container px-5 my-5">
 	        <div class="row gx-5">
 	            <div class="col-sm-4 col-xs-12">
-	                <video class="screen" loop muted data-autoplay >
+	                <video class="screen" playsinline loop muted data-autoplay >
             		<source src="imgs/SlideVideo1.mp4" type="video/mp4">
             		</video>
 	            </div>
@@ -75,7 +80,7 @@
 		<div class="container px-5 my-5 wow fadeIn">
 	        <div class="row gx-5">
 	            <div class="col-sm-4">
-		            <video class="screen screenEnd" loop muted data-autoplay>
+		            <video class="screen screenEnd" playsinline loop muted data-autoplay>
 	            	<source src="imgs/SlideVideo2.mp4" type="video/mp4">
 	            	</video>
 	            </div>
@@ -137,7 +142,6 @@
 
 <script type="text/javascript">
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['firstPage', 'secondPage', '3rdPage', 'lastPage'],
         sectionsColor: ['#fff', '#fff', '#fff'],
         navigation: true,
         navigationPosition: 'right',
@@ -149,6 +153,6 @@
 
     });
 </script>
-
+// Update
 </body>
 </html>
