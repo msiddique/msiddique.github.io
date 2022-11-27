@@ -13,7 +13,7 @@
   font-size: 3.2em;
   color: #000;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 
 .pcustom {
@@ -660,7 +660,7 @@ html.fp-enabled,
 
   .pcustom {
     margin-top: -8px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: #000;
     text-align: center;
   }
