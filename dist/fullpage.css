@@ -10,21 +10,21 @@
  */
 
 .h1custom {
-  font-size: 4em;
-  font-weight: 700;
+  font-family: 'M PLUS Rounded 1c', Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #000;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  margin-bottom: 16px;
+  font-size: 4.4em;
+  font-weight:600;
+  margin-bottom: 20px;
 }
 
 .pcustom {
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #000;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .container {
-  max-width: 780px;
+  max-width: 1000px;
 }
 
 .navbar-custom {
@@ -36,7 +36,6 @@
 .screen {
   width: 280px;
   height: auto;
-  margin-left: -65px;
 }
 
 .TuppleLogoMain {
@@ -507,7 +506,7 @@ html.fp-enabled,
     margin-left: auto;
     margin-right: auto;
     margin-top: -30px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .appleBadge {
@@ -539,16 +538,16 @@ html.fp-enabled,
   }
 
   .screen {
-    width: 190px;
+    width: 315px;
     height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .screenEnd {
-    margin-top: 90px;
+    margin-top: 20px;
   }
 
   .h1custom {
@@ -600,22 +599,22 @@ html.fp-enabled,
   }
 
   .TuppleTitle {
-    height: 48px;
+    height: 36px;
     width: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -5px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .screen {
-    width: 115px;
+    width: 215px;
     height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .h1custom {
@@ -641,20 +640,20 @@ html.fp-enabled,
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .screen {
-    width: 168px;
+    width: 260px;
     height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
   }
 
   .h1custom {
-    font-size: 2.7em;
+    font-size: 2.3em;
     margin-top: 0px;
     text-align: center;
   }
@@ -672,6 +671,7 @@ html.fp-enabled,
   .h1custom {
     text-align: center;
     margin-bottom: 24px;
+    font-size: 3.6em;
   }
 
   .pcustom {
@@ -682,7 +682,7 @@ html.fp-enabled,
   }
 
   .screen {
-    width: 190px;
+    width: 294px;
     height: auto;
     display: block;
     margin-right: auto;
@@ -742,19 +742,20 @@ html.fp-enabled,
 }
 
 /*  Medium devices (tablets, 768px and up */
-@media (min-width: 768px) {
-  .h1custom {
-    margin-top: 80px;
-  }
+@media (min-width: 768px) and (max-width: 991px)
+{
 
   .TuppleLogoMain {
     margin-bottom: -102px;
   }
 
+  .h1custom {
+  margin-top: 100px;
+  font-size: 3.3em;
+  }
+
   .screen {
-    width: 230px;
-    height: auto;
-    margin-left: -10px;
+    margin-left: -30px;
   }
 
   .copyright {
@@ -785,30 +786,30 @@ html.fp-enabled,
 /* Large devices (desktops, 992px and up */
 @media (min-width: 992px) {
   .h1custom {
-    margin-top: 115px;
+    margin-top: 140px;
   }
 
   .TuppleLogoMain {
     margin-bottom: -155px;
   }
 
-  .screen {
-    width: 280px;
+ .screen {
+    width: 350px;
     height: auto;
-    margin-left: -60px;
+    margin-left: -30px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up */
 @media (min-width: 1200px) {
   .h1custom {
-    margin-top: 125px;
+    margin-top: 150px;
   }
 
   .screen {
-    width: 310px;
+    width: 415px;
     height: auto;
-    margin-left: -90px;
+    margin-left: -85px;
   }
 
   .TuppleLogoMain {
